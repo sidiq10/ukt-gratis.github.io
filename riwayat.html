@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Transaksi</title>
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <style>
+        /* tambahkan style tambahan sesuai kebutuhan */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Kelompok</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tagihan.html">Tagihan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pembayaran.html">Pembayaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dispensasi.html">Dispensasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="virtual-account.html">VA BANK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rekap.html">Rekap</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="beranda.html">Beranda</a>
+                            <a class="dropdown-item" href="profil.html">Profil</a>
+                            <a class="dropdown-item" href="riwayat.html">Riwayat</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <h2>Riwayat Transaksi</h2>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Detail Transaksi</h5>
+                <ul class="list-group">
+                    <!-- Contoh item riwayat transaksi -->
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="font-weight-bold">Tanggal:</span> 1 Januari 2023
+                            </div>
+                            <div>
+                                <span class="font-weight-bold">Total Pembayaran:</span> Rp 1.700.000
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="font-weight-bold">Keterangan:</span> Pembayaran tagihan untuk semester 1 tahun ajaran 2023/2024
+                        </div>
+                    </li>
+                    <!-- Contoh item riwayat transaksi -->
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="font-weight-bold">Tanggal:</span> 5 Februari 2023
+                            </div>
+                            <div>
+                                <span class="font-weight-bold">Total Pembayaran:</span> Rp 1.200.000
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="font-weight-bold">Keterangan:</span> Pembayaran tagihan untuk semester 2 tahun ajaran 2022/2023
+                        </div>
+                    </li>
+                    <!-- Tambahkan item riwayat transaksi sesuai kebutuhan -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript untuk Bootstrap -->
+    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

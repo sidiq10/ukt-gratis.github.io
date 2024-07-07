@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/app/css/style.css">
+    <link rel="stylesheet" href="assets/app/css/main.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/3b4957157c.js" crossorigin="anonymous"></script> -->
+
+    <title>Mahasiswa</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-blue-dark">
+        <div class="container-lg">
+            <a class="navbar-brand text-yellow" href="index.html">Kelompok 6</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tagihan.html">Tagihan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pembayaran.html">Pembayaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="dispensasi.html">Dispensasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="virtual-account.html">VA BANK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="rekap.html">Rekap</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">
+                            <i class="fa fa-bell"></i> <span class="badge badge-pill badge-danger">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="beranda.html">
+                                Beranda
+                            </a>
+                            <a class="dropdown-item" href="profil.html">
+                                Profil
+                            </a>
+                            <a class="dropdown-item" href="riwayat.html">
+                                Riwayat
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="logout.php">
+                                <i class="fa fa-sign-out text-secondary"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrap py-3">
+        <div class="container-lg">
+            <div class="d-flex justify-content-between mb-2">
+                <h2>
+                    Pembayaran
+                </h2>
+            </div>
+            
+            <div class="pembayaran-form">
+                <div class="card shadow-sm mb-3">
+                    <form>
+                        <div class="card-body">
+            
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="ta">Semester Tahun Ajar</label>
+                                <div class="col-md-10">
+            
+                                    <select class="form-control" id="ta">
+                                        <option value="20192" selected="selected">Genap 2019/2020</option>
+                                        <option value="20191">Ganjil 2019/2020</option>
+                                    </select>
+            
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="biaya">Biaya</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" id="ta">
+                                        <option value="SPA_3">Sumbangan Pengembangan Akademik Angsuran 3 (SPA 3)</option><option value="WSDA" selected="selected">Wisuda</option>
+            
+                                        <option value="SPPUK">Uang Kuliah TUnggal (UKT) </option>
+                                    </select>
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="tgl-akhir-bayar">Tgl. Akhir Bayar</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="tgl-akhir-bayar" type="date" value="2020-05-23" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="tgl-tempo">Tgl. Tempo</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="tgl-tempo" type="date" value="2020-05-23" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="tagihan">Tagihan (Rp.)</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="tagihan" type="text" value="2.830.000" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="sudah-bayar">Sudah Bayar(Rp.)</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text" disabled="disabled" id="sudah-bayar" value="0">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="diskon">Diskon (Rp.)</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="diskon" type="text" value="0" disabled="disabled">
+                                </div>
+                            </div><hr><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="biaya">Jumlah Tagihan (Rp.)</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="biaya" type="biaya" disabled="disabled" value="2.830.000">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="denda">Denda (Rp.)</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="denda" type="text" value="50.000" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="dibayarkan">Bayar (Rp.)</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" id="dibayarkan">
+                                        <option value="2880000">2.880.000</option>
+                                        <option value="2500000" selected="selected">2.500.000</option>
+                                        <option value="2000000">2.000.000</option>
+                                        <option value="1500000">1.500.000</option>
+                                        <option value="1000000">1.000.000</option><option value="500000">500.000</option>
+                                    </select>
+                                    <em class="pl-3">Dua juta lima ratus ribu rupiah.</em>
+            
+            
+                                </div>
+                            </div><hr><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="kurang">Kekurangan (Rp.)</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="kurang" type="text" value="380.000" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="biaya">Tgl.Tempo Berikutnya</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="biaya" value="2020-07-08" type="date">
+                                </div>
+                            </div>
+            
+                            <div class="form-group row">
+            
+                            </div>
+            
+            
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-info" href="#">Bayar</a>
+                        </div>
+                    </form>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    var limit = new Date().toLocaleString("en-US", {timeZone: "Asia/Jakarta"}).slice(0,10).replace(/\//g,'-') + " 23:59:59";
+    // Set the date we're counting down to
+    var countDownDate = new Date(limit).getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        hours = (hours < 10) ? '0' + hours : hours;
+        document.getElementById("limit").innerHTML = limit;
+        document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("clock").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/popperjs/dist/umd/popper.min.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

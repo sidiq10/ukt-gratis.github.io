@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/app/css/style.css">
+    <link rel="stylesheet" href="assets/app/css/main.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/3b4957157c.js" crossorigin="anonymous"></script> -->
+
+    <title>Mahasiswa - Rekap</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-blue-dark">
+        <div class="container-lg">
+            <a class="navbar-brand text-yellow" href="index.html">Kelompok 6</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tagihan.html">Tagihan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pembayaran.html">Pembayaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="dispensasi.html">Dispensasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="virtual-account.html">VA BANK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="rekap.html">Rekap</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">
+                            <i class="fa fa-bell"></i> <span class="badge badge-pill badge-danger">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="beranda.html">
+                                Beranda
+                            </a>
+                            <a class="dropdown-item" href="profil.html">
+                                Profil
+                            </a>
+                            <a class="dropdown-item" href="riwayat.html">
+                                Riwayat
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="logout.php">
+                                <i class="fa fa-sign-out text-secondary"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrap py-3">
+        <div class="container-lg">
+            <div class="d-flex justify-content-between mb-2">
+                <h2>
+                    Rekapitulasi Data
+                </h2>
+            </div>
+
+            <!-- Contoh Rekapitulasi Data -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Rekap Pembayaran Bulan Juni 2024</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Tanggal Pembayaran</th>
+                                <th>Nominal Pembayaran</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2024-06-01</td>
+                                <td>Rp 1.000.000</td>
+                                <td>Sukses</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2024-06-15</td>
+                                <td>Rp 700.000</td>
+                                <td>Sukses</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Rekap Tagihan Tahun Ajaran 2023/2024</h4>
+                    <ul>
+                        <li>Tagihan Semester Ganjil: Rp 1.500.000</li>
+                        <li>Tagihan Semester Genap: Rp 1.200.000</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/popperjs/dist/umd/popper.min.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
